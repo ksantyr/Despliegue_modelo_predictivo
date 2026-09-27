@@ -204,6 +204,11 @@ if submitted:
     col_p.metric("Probabilidad de aprobar",   f"{prob_aprobado:.1%}")
     col_r.metric("Probabilidad de reprobar",  f"{prob_reprobado:.1%}")
 
+    st.warning(
+        "**Rendimiento del modelo — clase Reprobado (0):**  "
+        "Precisión = 62.5 % · Recall = 51.7 % · F1 = 56.5 %"
+    )
+
     with st.expander("Ver detalle del vector de entrada"):
         st.dataframe(
             pd.DataFrame({"Columna": col_names, "Valor": X_input.iloc[0].values}),
