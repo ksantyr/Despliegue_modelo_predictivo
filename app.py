@@ -56,7 +56,7 @@ with st.form("formulario"):
             2014.0,2015.0,2016.0,2017.0,2018.0,2019.0,
             2020.0,2021.0,2022.0,2023.0,2024.0,2025.0,
         ])
-        naturaleza_colegio = st.selectbox("Naturaleza Colegio", ["OFICIAL", "PRIVADO"])
+        naturaleza_colegio = st.selectbox("Naturaleza Colegio", ["NO OFICIAL", "OFICIAL"])
         origen_colegio     = st.selectbox("Origen Colegio", ["local", "no local"])
         origen_nacimiento  = st.selectbox("Origen Nacimiento", ["local", "no local"])
         tipo_municipio     = st.selectbox("Tipo Municipio Nacimiento", [
